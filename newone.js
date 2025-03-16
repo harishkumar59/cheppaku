@@ -52,3 +52,30 @@ console.log(student["fullNames"]);
 student["age"] = student["age"] + 1;
 console.log(student.age);
 console.log("last commit")
+
+// const variable cannot be changed 
+// const object variabe can be modified 
+
+
+const pen = {
+    title : "helo",
+    rating : 6,
+    offer :787,
+
+};
+
+console.log(pen);
+console.log(typeof pen);
+
+//you can add strings with +
+console.log("har"+"ish");
+
+
+const profile ={
+    user_name : "shradha khapra",
+    is_following : false,
+    
+};
+console.log(profile);
+
+console.log(typeof profile["is_following"]);
