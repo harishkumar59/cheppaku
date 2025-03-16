@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Video Generator</h1>
+        <label for="prompt">Enter a Prompt:</label>
+        <input type="text" id="prompt" placeholder="Describe your video">
+        
+        <label for="image">Upload an Image:</label>
+        <input type="file" id="image" accept="image/*">
+
+        <label for="video">Upload a Video (Optional):</label>
+        <input type="file" id="video" accept="video/*">
+        
+        <button onclick="generateVideo()">Generate Video</button>
+        
+        <h2>Generated Video:</h2>
+        <video id="outputVideo" controls></video>
+    </div>
+
+    <script src="script.js"></script>
+    <style>body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 50%;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px gray;
+        margin-top: 50px;
+    }
+    
+    input, button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    button {
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: darkblue;
+    }</style>
+
+</body>
+</html>
